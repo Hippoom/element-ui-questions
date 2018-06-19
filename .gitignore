@@ -1,0 +1,18 @@
+# idea
+*.ipr
+*.iws
+*.iml
+.idea/
+out/
+.shelf/
+.ideaDataSources/
+dataSources/
+
+# OS
+.DS_Store
+
+# npm
+node_modules/
+
+# local
+dist/
