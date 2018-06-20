@@ -1,23 +1,7 @@
 <template>
-  <!-- <el-select
-    v-bind:value="clientId"
-    @input="$emit('input', $event)"
-    placeholder="Filter by short name"
-    filterable="true"
-    remote="true"
-    :remote-method="filter"
-    :loading="loading">
-    <el-option
-      v-for="item in clients"
-      :key="item._id"
-      :label="item.name"
-      :value="item._id">
-    </el-option>
-  </el-select> -->
-
   <el-select
     :value="selected"
-    @input="dispatch"
+    @input="$emit('input', $event)"
     placeholder="Filter by short name"
     :filterable="true"
     :remote="true"
@@ -55,11 +39,6 @@ export default {
       } else {
         this.clients = []
       }
-    },
-
-    dispatch (e) {
-      console.log(e)
-      this.$emit('input', e)
     }
   }
 }

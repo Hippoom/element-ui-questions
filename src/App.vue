@@ -56,7 +56,20 @@ export default {
         clientId: ''
       },
       clients: [],
-      loading: false
+      loading: false,
+      contents: [{
+        number: '1231',
+        _embedded: {
+          client: {
+            name: 'Foo'
+          }
+        },
+        _links: {
+          self: {
+            href: '111'
+          }
+        }
+      }]
     }
   },
 
