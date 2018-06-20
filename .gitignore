@@ -1,18 +1,12 @@
-# idea
-*.ipr
-*.iws
-*.iml
-.idea/
-out/
-.shelf/
-.ideaDataSources/
-dataSources/
-
-# OS
 .DS_Store
-
-# npm
 node_modules/
-
-# local
 dist/
+npm-debug.log
+yarn-error.log
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
