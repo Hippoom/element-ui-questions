@@ -1,7 +1,7 @@
 <template>
   <el-select
     :value="selected"
-    @input="$emit('input', $event)"
+    @input="dispatch"
     placeholder="Filter by short name"
     :filterable="true"
     :remote="true"
@@ -39,6 +39,11 @@ export default {
       } else {
         this.clients = []
       }
+    },
+
+    dispatch (e) {
+      this.$emit('input', e)
+      this.selected = e
     }
   }
 }
