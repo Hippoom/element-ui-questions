@@ -1,10 +1,10 @@
 <template>
     <el-select
-            v-bind:value="clientId"
+            v-bind:value="value"
             @input="$emit('input', $event)"
             placeholder="Filter by short name"
-            filterable="true"
-            remote="true"
+            filterable
+            remote
             :remote-method="filter"
             :loading="loading">
         <el-option
@@ -18,7 +18,7 @@
 <script>
     export default {
         props: {
-            clientId: {
+            value: {
                 type: String,
                 required: true
             }
